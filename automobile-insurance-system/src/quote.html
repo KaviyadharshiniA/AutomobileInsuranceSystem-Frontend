@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Quotes</title>
+
+    <link rel="stylesheet"
+    href="css/style.css">
+
+    <link rel="stylesheet"
+    href="css/dashboard.css">
+
+    <link rel="stylesheet"
+    href="css/forms.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-circle">
+                A
+            </div>
+
+            <h2>
+                AegisDrive
+            </h2>
+
+        </div>
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="user-dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="policies.html">
+                    Policies
+                </a>
+            </li>
+
+            <li>
+                <a href="proposal.html">
+                    Proposal
+                </a>
+            </li>
+
+            <li>
+                <a href="quote.html">
+                    Quotes
+                </a>
+            </li>
+
+            <li>
+                <a href="claims.html">
+                    Claims
+                </a>
+            </li>
+
+            <li>
+                <a href="payments.html">
+                    Payments
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="#"
+                onclick="logout()">
+
+                    Logout
+
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="dashboard-main">
+
+        <h1>
+            Insurance Quotes
+        </h1>
+
+        <div class="form-card">
+
+            <form id="quoteForm">
+
+                <div class="form-group">
+
+                    <label>
+                        Quote Amount
+                    </label>
+
+                    <input
+                    type="number"
+                    id="quoteAmount"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Generated Date
+                    </label>
+
+                    <input
+                    type="date"
+                    id="generatedDate"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Proposal
+                    </label>
+
+                    <select
+                    id="proposalId"
+                    required>
+                    </select>
+
+                </div>
+
+                <button
+                type="submit"
+                class="btn btn-primary">
+
+                    Generate Quote
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="table-card">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Proposal ID</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="quoteTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+<script src="js/quote.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Proposal</title>
+
+    <link rel="stylesheet"
+    href="css/style.css">
+
+    <link rel="stylesheet"
+    href="css/dashboard.css">
+
+    <link rel="stylesheet"
+    href="css/forms.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-circle">
+                A
+            </div>
+
+            <h2>
+                AegisDrive
+            </h2>
+
+        </div>
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="user-dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="policies.html">
+                    Policies
+                </a>
+            </li>
+
+            <li>
+                <a href="proposal.html">
+                    Proposal
+                </a>
+            </li>
+
+            <li>
+                <a href="claims.html">
+                    Claims
+                </a>
+            </li>
+
+            <li>
+                <a href="payments.html">
+                    Payments
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="#"
+                onclick="logout()">
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="dashboard-main">
+
+        <h1>
+            Insurance Proposal
+        </h1>
+
+        <div class="form-card">
+
+            <form id="proposalForm">
+
+                <div class="form-group">
+
+                    <label>
+                        Vehicle Type
+                    </label>
+
+                    <select
+                    id="vehicleType"
+                    required>
+
+                        <option value="">
+                            Select Vehicle
+                        </option>
+
+                        <option value="CAR">
+                            CAR
+                        </option>
+
+                        <option value="BIKE">
+                            BIKE
+                        </option>
+
+                        <option value="TRUCK">
+                            TRUCK
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Vehicle Number
+                    </label>
+
+                    <input
+                    type="text"
+                    id="vehicleNumber"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Model Name
+                    </label>
+
+                    <input
+                    type="text"
+                    id="modelName"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Vehicle Age
+                    </label>
+
+                    <input
+                    type="number"
+                    id="vehicleAge"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Selected Addons
+                    </label>
+
+                    <input
+                    type="text"
+                    id="selectedAddons"
+                    placeholder=
+                    "GPS, Roadside Assistance">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Policy
+                    </label>
+
+                    <select
+                    id="policyId"
+                    required>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Proposal Status
+                    </label>
+
+                    <select
+                    id="status"
+                    required>
+
+                        <option value="PENDING">
+                            PENDING
+                        </option>
+
+                        <option value="APPROVED">
+                            APPROVED
+                        </option>
+
+                        <option value="REJECTED">
+                            REJECTED
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button
+                type="submit"
+                class="btn btn-primary">
+
+                    Submit Proposal
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+<script src="js/proposal.js"></script>
+
+</body>
+</html>

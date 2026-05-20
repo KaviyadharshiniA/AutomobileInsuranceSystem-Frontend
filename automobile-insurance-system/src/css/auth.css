@@ -1,0 +1,154 @@
+/* AUTH PAGE */
+
+.auth-section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+.auth-container{
+    width:100%;
+    max-width:1200px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.auth-left{
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #38bdf8
+    );
+    padding:60px;
+    color:white;
+    position:relative;
+}
+
+.auth-left h1{
+    font-size:48px;
+    margin-top:25px;
+}
+
+.auth-left p{
+    margin-top:20px;
+    line-height:1.8;
+}
+
+.login-car{
+    width:100%;
+    margin-top:50px;
+}
+
+.auth-card{
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.auth-card h2{
+    font-size:36px;
+}
+
+.auth-card p{
+    color:#64748b;
+    margin-bottom:30px;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.input-group input{
+    width:100%;
+    padding:15px;
+    border:1px solid #dbeafe;
+    border-radius:15px;
+    outline:none;
+}
+
+.input-group input:focus{
+    border:1px solid #2563eb;
+}
+
+.login-btn{
+    width:100%;
+    margin-top:20px;
+}
+
+.auth-footer{
+    text-align:center;
+    margin-top:25px;
+}
+
+.auth-footer a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.auth-container{
+    grid-template-columns:1fr;
+}
+
+.auth-left{
+    display:none;
+}
+
+.auth-card{
+    padding:40px 25px;
+}
+
+}
+
+.demo-login{
+    margin-top:25px;
+    background:#f8fafc;
+    padding:20px;
+    border-radius:20px;
+    border:1px solid #dbeafe;
+}
+
+.demo-login h4{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.demo-login p{
+    margin:12px 0;
+    color:#475569;
+    line-height:1.7;
+}
+textarea,
+select{
+
+width:100%;
+
+padding:15px;
+
+border-radius:15px;
+
+border:1px solid #dbeafe;
+
+outline:none;
+
+font-size:15px;
+
+}

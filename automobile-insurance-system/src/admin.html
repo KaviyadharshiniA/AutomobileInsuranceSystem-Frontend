@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Users</title>
+
+    <link rel="stylesheet"
+    href="css/style.css">
+
+    <link rel="stylesheet"
+    href="css/dashboard.css">
+
+    <link rel="stylesheet"
+    href="css/forms.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-circle">
+                A
+            </div>
+
+            <h2>
+                Admin Panel
+            </h2>
+
+        </div>
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="admin-dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="admin.html">
+                    Manage Users
+                </a>
+            </li>
+
+            <li>
+                <a href="policies.html">
+                    Policies
+                </a>
+            </li>
+
+            <li>
+                <a href="claims.html">
+                    Claims
+                </a>
+            </li>
+
+            <li>
+                <a href="payments.html">
+                    Payments
+                </a>
+            </li>
+
+            <li>
+                <a href="#"
+                onclick="logout()">
+
+                    Logout
+
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="dashboard-main">
+
+        <h1>
+            Manage Users
+        </h1>
+
+        <div class="table-card">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Age</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="userTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+</html>

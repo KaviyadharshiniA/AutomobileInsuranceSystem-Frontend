@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>User Dashboard</title>
+
+    <link rel="stylesheet"
+    href="css/style.css">
+
+    <link rel="stylesheet"
+    href="css/dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-circle">
+                A
+            </div>
+
+            <h2>
+                AegisDrive
+            </h2>
+
+        </div>
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="user-dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="policies.html">
+                    Policies
+                </a>
+            </li>
+
+            <li>
+                <a href="proposal.html">
+                    Proposal
+                </a>
+            </li>
+
+            <li>
+                <a href="claims.html">
+                    Claims
+                </a>
+            </li>
+
+            <li>
+                <a href="payments.html">
+                    Payments
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    Profile
+                </a>
+            </li>
+
+            <li>
+    <a href="quote.html">
+        Quotes
+    </a>
+</li>
+
+            <li>
+                <a href="#"
+                onclick="logout()">
+
+                    Logout
+
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="dashboard-main">
+
+        <div class="top-bar">
+
+            <div>
+
+                <h1>
+                    Welcome,
+                    <span id="username">
+                    </span>
+                    👋
+                </h1>
+
+                <p>
+                    Manage your insurance
+                    quickly and securely
+                </p>
+
+            </div>
+
+            <button
+            class="btn btn-primary"
+            onclick="
+            window.location.href=
+            'new-policy.html'
+            ">
+
+                + New Policy
+
+            </button>
+
+        </div>
+
+        <!-- CARDS -->
+
+        <div class="dashboard-cards">
+
+            <div class="dash-card">
+
+                <h3>
+                    Active Policies
+                </h3>
+
+                <h1 id="policyCount">
+                    0
+                </h1>
+
+            </div>
+
+            <div class="dash-card">
+
+                <h3>
+                    Claims
+                </h3>
+
+                <h1>
+                    0
+                </h1>
+
+            </div>
+
+            <div class="dash-card">
+
+                <h3>
+                    Payments
+                </h3>
+
+                <h1>
+                    0
+                </h1>
+
+            </div>
+
+            <div class="dash-card">
+
+                <h3>
+                    Proposals
+                </h3>
+
+                <h1>
+                    0
+                </h1>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

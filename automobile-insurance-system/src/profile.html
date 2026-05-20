@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Profile</title>
+
+    <link rel="stylesheet"
+    href="css/style.css">
+
+    <link rel="stylesheet"
+    href="css/dashboard.css">
+
+    <link rel="stylesheet"
+    href="css/forms.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-circle">
+                A
+            </div>
+
+            <h2>
+                AegisDrive
+            </h2>
+
+        </div>
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="user-dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="policies.html">
+                    Policies
+                </a>
+            </li>
+
+            <li>
+                <a href="proposal.html">
+                    Proposal
+                </a>
+            </li>
+
+            <li>
+                <a href="claims.html">
+                    Claims
+                </a>
+            </li>
+
+            <li>
+                <a href="payments.html">
+                    Payments
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="#"
+                onclick="logout()">
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="dashboard-main">
+
+        <h1>
+            My Profile
+        </h1>
+
+        <div class="form-card">
+
+            <form id="profileForm">
+
+                <div class="form-group">
+
+                    <label>
+                        Full Name
+                    </label>
+
+                    <input
+                    type="text"
+                    id="name"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                    type="email"
+                    id="email"
+                    readonly>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Date of Birth
+                    </label>
+
+                    <input
+                    type="date"
+                    id="dob">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Age
+                    </label>
+
+                    <input
+                    type="number"
+                    id="age">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Aadhaar
+                    </label>
+
+                    <input
+                    type="text"
+                    id="aadhaar">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        PAN Number
+                    </label>
+
+                    <input
+                    type="text"
+                    id="pan">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Address
+                    </label>
+
+                    <textarea
+                    id="address">
+                    </textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Role
+                    </label>
+
+                    <input
+                    type="text"
+                    id="role"
+                    readonly>
+
+                </div>
+
+                <button
+                type="submit"
+                class="btn btn-primary">
+
+                    Update Profile
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+</html>

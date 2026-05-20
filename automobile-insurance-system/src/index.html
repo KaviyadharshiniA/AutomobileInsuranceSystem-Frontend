@@ -1,0 +1,520 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AegisDrive Insurance</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="container">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <div class="logo-circle">A</div>
+                <h2>AegisDrive</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="claims.html">Claims</a></li>
+                <li><a href="user-dashboard.html">Dashboard</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <button class="btn btn-outline"
+                onclick="window.location.href='login.html'">
+                    Sign In
+                </button>
+
+                <button class="btn btn-primary"
+                onclick="window.location.href='register.html'">
+                    Get Started
+                </button>
+            </div>
+
+        </nav>
+
+    </div>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero container">
+
+        <div class="hero-left">
+
+            <span class="hero-badge">
+                🚗 Trusted by 100,000+ Drivers
+            </span>
+
+            <h1>
+                Smart Auto Insurance
+                <br>
+                for the Modern Driver
+            </h1>
+
+            <p>
+                Experience premium coverage with AI-powered claims,
+                instant quotes, and personalized protection that
+                adapts to your lifestyle.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="btn btn-primary">
+                    Get Instant Quote →
+                </button>
+
+                <button class="btn btn-outline">
+                    ▶ Watch Demo
+                </button>
+
+            </div>
+
+            <div class="rating-box">
+
+                <div class="avatars">
+                    <span>👤</span>
+                    <span>👤</span>
+                    <span>👤</span>
+                </div>
+
+                <div>
+                    <h4>4.9/5 Customer Rating</h4>
+                    <p>From 12,000+ Reviews</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="hero-right">
+
+            <div class="hero-card">
+
+                <div class="premium-tag">
+                    Premium Vehicle
+                </div>
+
+                <img
+                    src="assets/car.png"
+                    class="car-image"
+                >
+
+                <div class="floating-card one">
+                    <h4>Claims Processed</h4>
+                    <h2>2.4K+</h2>
+                </div>
+
+                <div class="floating-card two">
+                    <h4>Avg. Savings</h4>
+                    <h2>Rs.50000</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section class="container">
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h2>98%</h2>
+                <p>Claims Approved</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>60 sec</h2>
+                <p>Average Quote Time</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>Rs.2.4M</h2>
+                <p>Claims Paid Out</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>24/7</h2>
+                <p>Customer Support</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COVERAGE SECTION -->
+
+<section class="coverage container">
+
+    <div class="section-title">
+
+        <h2>Coverage Plans</h2>
+
+        <p>
+            Choose the perfect protection
+            tailored to your driving needs
+        </p>
+
+    </div>
+
+    <div class="plan-grid">
+
+        <!-- BASIC -->
+
+        <div class="plan-card"
+        id="plan1">
+
+            <h3>
+                Basic Protection
+            </h3>
+
+            <h1>
+                Rs.3999/mo
+            </h1>
+
+            <ul>
+                <li>
+                    ✔ Liability Coverage
+                </li>
+
+                <li>
+                    ✔ Collision Protection
+                </li>
+
+                <li>
+                    ✔ 24/7 Support
+                </li>
+            </ul>
+
+            <button
+            class="btn btn-outline"
+            onclick="selectPlan(1)">
+
+                Choose Plan
+
+            </button>
+
+        </div>
+
+        <!-- PREMIUM -->
+
+        <div
+        class="plan-card featured"
+        id="plan2">
+
+            <span class="popular">
+
+                Most Popular
+
+            </span>
+
+            <h3>
+                Premium Care
+            </h3>
+
+            <h1>
+                Rs.5999/mo
+            </h1>
+
+            <ul>
+                <li>
+                    ✔ Full Coverage
+                </li>
+
+                <li>
+                    ✔ Roadside Assistance
+                </li>
+
+                <li>
+                    ✔ Zero Deductible
+                </li>
+
+                <li>
+                    ✔ Premium Support
+                </li>
+            </ul>
+
+            <button
+            class="btn btn-outline"
+            onclick="selectPlan(2)">
+
+                Choose Plan
+
+            </button>
+
+        </div>
+
+        <!-- ULTIMATE -->
+
+        <div class="plan-card"
+        id="plan3">
+
+            <h3>
+                Ultimate Shield
+            </h3>
+
+            <h1>
+                Rs.9999/mo
+            </h1>
+
+            <ul>
+                <li>
+                    ✔ Everything Included
+                </li>
+
+                <li>
+                    ✔ VIP Claims
+                </li>
+
+                <li>
+                    ✔ Rental Car
+                </li>
+            </ul>
+
+            <button
+            class="btn btn-outline"
+            onclick="selectPlan(3)">
+
+                Choose Plan
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- WHY US -->
+
+    <section class="why container">
+
+        <div class="section-title">
+            <h2>Why Choose AegisDrive?</h2>
+            <p>
+                Experience next generation insurance
+            </p>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="card why-card">
+                <h3>⚡ 60 Second Quotes</h3>
+                <p>
+                    Get insured instantly with
+                    AI-powered quotes.
+                </p>
+            </div>
+
+            <div class="card why-card">
+                <h3>🛡 Smart Claims</h3>
+                <p>
+                    Submit claims and track
+                    everything in real time.
+                </p>
+            </div>
+
+            <div class="card why-card">
+                <h3>🎁 Rewards Program</h3>
+                <p>
+                    Safe driving earns premium
+                    discounts.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TESTIMONIAL -->
+
+    <section class="container testimonial-section">
+
+        <div class="section-title">
+            <h2>Trusted by Thousands</h2>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="card testimonial-card">
+                <h3>Sarah Johnson</h3>
+                <p>
+                    “Amazing service and super fast
+                    claim approval.”
+                </p>
+            </div>
+
+            <div class="card testimonial-card">
+                <h3>Michael Lee</h3>
+                <p>
+                    “Best insurance experience I’ve had.”
+                </p>
+            </div>
+
+            <div class="card testimonial-card">
+                <h3>Emma Wilson</h3>
+                <p>
+                    “Affordable and modern protection.”
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about container">
+
+        <div class="about-box">
+
+            <h1>
+                Driving the Future
+                of Auto Protection
+            </h1>
+
+            <p>
+                Combining technology with trust to
+                protect drivers everywhere.
+            </p>
+
+            <button class="btn btn-primary">
+                Learn More
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="container">
+
+<div class="section-title">
+
+<h2>
+Customer Reviews
+</h2>
+
+<p>
+What our customers say
+</p>
+
+</div>
+
+<div class="testimonial-grid">
+
+<div class="card">
+
+<h3>
+Rahul Sharma
+</h3>
+
+<p>
+Amazing insurance
+service. Claim
+process was easy.
+</p>
+
+⭐ ⭐ ⭐ ⭐ ⭐
+
+</div>
+
+<div class="card">
+
+<h3>
+Priya Verma
+</h3>
+
+<p>
+Very smooth premium
+payment experience.
+</p>
+
+⭐ ⭐ ⭐ ⭐
+
+</div>
+
+<div class="card">
+
+<h3>
+Arjun Kumar
+</h3>
+
+<p>
+Fast support and
+great policy options.
+</p>
+
+⭐ ⭐ ⭐ ⭐ ⭐
+
+</div>
+
+</div>
+
+</section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+                <h3>AegisDrive</h3>
+                <p>Modern auto insurance for everyone.</p>
+            </div>
+
+            <div>
+                <h3>Company</h3>
+
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Services</h3>
+
+                <ul>
+                    <li><a href="#">Claims</a></li>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Policies</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Support</h3>
+
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 AegisDrive. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>
